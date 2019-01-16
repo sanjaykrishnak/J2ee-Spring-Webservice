@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Created-By: Sanjay Katikineni
+Main-Class: com.home.MavenTest
+Class-Path: dateutils.jar

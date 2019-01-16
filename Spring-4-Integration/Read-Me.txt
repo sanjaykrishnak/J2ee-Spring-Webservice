@@ -1,0 +1,5 @@
+War file for SPRING 4.2 and Hibernate-4 integration
+
+Sample done when i had come on to the bench after BOA-ML assignment.
+
+Trying to do the entire thing using MAVEN, successfully completed.

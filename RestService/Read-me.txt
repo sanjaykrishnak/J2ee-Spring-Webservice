@@ -1,0 +1,34 @@
+The example is created ground up, but it is not working as the issue is more w.r.to 
+JRE versions and Tomcat version
+
+Inputs :- It is working fine if the object is of animal type as shown below.
+
+http://localhost:8080/RestService-1.0/rest/animals/testJsonAnimal
+
+Web.xml should have these configured to the container servlet.
+
+ </init-param>
+    	<init-param>
+		<param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+		<param-value>true</param-value>
+</init-param>
+
+Read it in the blogs that the below configuration of JACKSON should help JSON Object also displayed.
+http://localhost:8080/RestService-1.0/rest/animals/testJson
+
+But it is not working. Probably becuase of the version mismatches
+	<init-param>
+      <param-name>jersey.config.server.provider.classnames</param-name>
+      <param-value>org.glassfish.jersey.jackson.JacksonFeature</param-value>
+    </init-param>
+    
+
+To test :
+http://localhost:8080/RestService-1.0/rest/animals
+
+Finally changed the TOMCAT versions, and it is working fine.
+
+MVN integration is not working in Eclipse. Go to the directory :
+C:\Users\home\w4WP_workspaces\J2ee-Spring-Webservices\RestService
+and press :- mvn -e package
+   

@@ -1,0 +1,8 @@
+Maven is built upon Phases and goals.
+
+Goals are associated with plugins.
+
+
+
+
+
